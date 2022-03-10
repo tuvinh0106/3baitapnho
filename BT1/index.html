@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        function F1() {
+            $.ajax({
+                url: 'https://621460a989fad53b1f120832.mockapi.io/computers',
+                dataType: 'json',
+                success: function(dataReturn) {
+                    console.log(dataReturn);
+                    $(".computer").remove();
+                    $.each(dataReturn, function(key, value) {
+                        var s = `<div class="computer" style="color:red;cursor: pointer" onclick="deleteData(${value.id})">${value.id} - ${value.name} - ${value.price} - <img style="width: 150px" src="${value.image}"><br></div>`;
+                        $('#result1').append(s);
+                    });
+
+                }
+            });
+        }
+
+        function deleteData($id) {
+            var id = $id;
+            $.ajax({
+                url: `https://621460a989fad53b1f120832.mockapi.io/computers/${id}`,
+                type: "DELETE",
+                dataType: "json",
+                success: function(data) {
+                    F1();
+                }
+            });
+        }
+        F1();
+    </script>
+</head>
+
+<body>
+    <div id="result1"></div>
+</body>
+
+</html>
