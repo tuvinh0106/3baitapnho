@@ -1,7 +1,7 @@
 # 3baitapnho
 ****************************** Bài Tập 1**************************
 
-tên miền : https://tuvinh0106.github.io/3baitapnho/BT1/api/index.html
+tên miền : https://tuvinh0106.github.io/3baitapnho/BT1/index.html
 
 Đã kết nối được với API
 
