@@ -14,6 +14,7 @@ Muốn xóa thì nhấp chọn dòng muốn xóa
 Khi đã xóa xong thì nó sẽ tự động cập nhật lại.
 
 ****************************** Bài Tập 2**************************
+
 tên miền : https://tuvinh0106.github.io/3baitapnho/BT2/index.html
 
 tên miền : https://nhom11s.000webhostapp.com/BT2/
